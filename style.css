@@ -1,0 +1,102 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  input[type="text"],
+  textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  input[type="text"] {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  #notes-container {
+    margin-top: 20px;
+  }
+  
+  .note {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .note h3 {
+    color: #333;
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .note p {
+    color: #777;
+    margin: 10px 0;
+  }
+  
+  .note .note-date {
+    color: #999;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .note .note-content-input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .note .update-note-button,
+  .note .delete-note-button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 10px;
+    margin-top: 5px;
+  }
+  
+  .note .update-note-button {
+    background-color: #4caf50;
+    margin-right: 5px;
+  }
+  
