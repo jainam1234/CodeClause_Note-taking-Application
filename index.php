@@ -4,21 +4,21 @@ $username = "root";
 $password = "";
 $dbname = "write";
 
-// Create a new mysqli instance
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check the connection
+
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Perform the query
+
 $sql = "SELECT * FROM notes";
 $result = $conn->query($sql);
 
-// Check if there are any notes
+
 if ($result->num_rows > 0) {
-    // Output data of each row
+    
     while ($row = $result->fetch_assoc()) {
         echo "Title: " . $row["title"] . "<br>";
         echo "Content: " . $row["content"] . "<br>";
@@ -30,7 +30,7 @@ if ($result->num_rows > 0) {
     echo "No notes found.";
 }
 
-// Close the database connection
+
 $conn->close();
 ?>
 
@@ -54,5 +54,4 @@ $conn->close();
   <script src="script.js"></script>
 </body>
 </html>
-
 

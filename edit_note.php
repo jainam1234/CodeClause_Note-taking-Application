@@ -6,11 +6,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $title = $_POST['title'];
     $content = $_POST['content'];
 
-    // Validate inputs (add your own validation)
+    
 
     $sql = "UPDATE notes SET title='$title', content='$content', updated_at=NOW() WHERE id=$id";
     if ($conn->query($sql) === TRUE) {
-        header("Location: index.php"); // Redirect back to the main page
+        header("Location: index.php"); 
         exit;
     } else {
         echo 'Error updating note: ' . $conn->connect_error;
